@@ -1,0 +1,382 @@
+[
+  {
+    "productName": "Wireless Earbuds Pro",
+    "productImageURL": "https://example.com/images/wireless-earbuds-pro.jpg",
+    "description": "High-quality wireless earbuds with noise-canceling technology.",
+    "price": 199.99,
+    "category": "Electronics",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-08-15T14:30:00",
+    "brand": "SoundWave"
+  },
+  {
+    "productName": "Smart Home Hub",
+    "productImageURL": "https://example.com/images/smart-home-hub.jpg",
+    "description": "A central control system for all your smart home devices.",
+    "price": 129.99,
+    "category": "Home Automation",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-08-14T10:15:00",
+    "brand": "HomeEase"
+  },
+  {
+    "productName": "4K Ultra HD TV",
+    "productImageURL": "https://example.com/images/4k-ultra-hd-tv.jpg",
+    "description": "A 55-inch 4K Ultra HD TV with vibrant colors and smart features.",
+    "price": 799.99,
+    "category": "Electronics",
+    "rating": "4.8",
+    "createdAtDateTime": "2024-08-13T18:45:00",
+    "brand": "VisionMax"
+  },
+  {
+    "productName": "Gaming Laptop",
+    "productImageURL": "https://example.com/images/gaming-laptop.jpg",
+    "description": "High-performance gaming laptop with a powerful GPU and fast refresh rate.",
+    "price": 1499.99,
+    "category": "Computers",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-08-12T13:20:00",
+    "brand": "GameTech"
+  },
+  {
+    "productName": "Bluetooth Speaker",
+    "productImageURL": "https://example.com/images/bluetooth-speaker.jpg",
+    "description": "Portable Bluetooth speaker with deep bass and long battery life.",
+    "price": 79.99,
+    "category": "Electronics",
+    "rating": "4.4",
+    "createdAtDateTime": "2024-08-11T09:05:00",
+    "brand": "BeatBox"
+  },
+  {
+    "productName": "Fitness Tracker",
+    "productImageURL": "https://example.com/images/fitness-tracker.jpg",
+    "description": "A sleek fitness tracker with heart rate monitoring and GPS.",
+    "price": 99.99,
+    "category": "Wearables",
+    "rating": "4.3",
+    "createdAtDateTime": "2024-08-10T16:40:00",
+    "brand": "FitPulse"
+  },
+  {
+    "productName": "Noise-Canceling Headphones",
+    "productImageURL": "https://example.com/images/noise-canceling-headphones.jpg",
+    "description": "Over-ear headphones with active noise-canceling and superior sound quality.",
+    "price": 249.99,
+    "category": "Electronics",
+    "rating": "4.9",
+    "createdAtDateTime": "2024-08-09T12:25:00",
+    "brand": "AudioPhile"
+  },
+  {
+    "productName": "Electric Scooter",
+    "productImageURL": "https://example.com/images/electric-scooter.jpg",
+    "description": "Foldable electric scooter with a long-range battery and fast charging.",
+    "price": 499.99,
+    "category": "Transportation",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-08-08T14:10:00",
+    "brand": "EcoRide"
+  },
+  {
+    "productName": "Smart Thermostat",
+    "productImageURL": "https://example.com/images/smart-thermostat.jpg",
+    "description": "Energy-efficient smart thermostat with remote control via smartphone.",
+    "price": 199.99,
+    "category": "Home Automation",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-08-07T11:55:00",
+    "brand": "ClimateControl"
+  },
+  {
+    "productName": "Digital Camera",
+    "productImageURL": "https://example.com/images/digital-camera.jpg",
+    "description": "Compact digital camera with 20MP sensor and 4K video recording.",
+    "price": 399.99,
+    "category": "Photography",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-08-06T17:35:00",
+    "brand": "PhotoPro"
+  },
+  {
+    "productName": "Portable Power Bank",
+    "productImageURL": "https://example.com/images/portable-power-bank.jpg",
+    "description": "High-capacity power bank with multiple USB ports for charging devices.",
+    "price": 39.99,
+    "category": "Accessories",
+    "rating": "4.4",
+    "createdAtDateTime": "2024-08-05T08:00:00",
+    "brand": "ChargeUp"
+  },
+  {
+    "productName": "Smartwatch",
+    "productImageURL": "https://example.com/images/smartwatch.jpg",
+    "description": "Stylish smartwatch with health tracking and customizable watch faces.",
+    "price": 249.99,
+    "category": "Wearables",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-08-04T15:45:00",
+    "brand": "TechTime"
+  },
+  {
+    "productName": "Robot Vacuum Cleaner",
+    "productImageURL": "https://example.com/images/robot-vacuum-cleaner.jpg",
+    "description": "Automated robot vacuum cleaner with smart navigation and app control.",
+    "price": 299.99,
+    "category": "Home Appliances",
+    "rating": "4.8",
+    "createdAtDateTime": "2024-08-03T13:30:00",
+    "brand": "CleanBot"
+  },
+  {
+    "productName": "Electric Toothbrush",
+    "productImageURL": "https://example.com/images/electric-toothbrush.jpg",
+    "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+    "price": 79.99,
+    "category": "Personal Care",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-08-02T10:15:00",
+    "brand": "SmileBright"
+  },
+  {
+    "productName": "Wireless Charger",
+    "productImageURL": "https://example.com/images/wireless-charger.jpg",
+    "description": "Fast wireless charger compatible with all Qi-enabled devices.",
+    "price": 29.99,
+    "category": "Accessories",
+    "rating": "4.3",
+    "createdAtDateTime": "2024-08-01T19:00:00",
+    "brand": "PowerWave"
+  },
+  {
+    "productName": "Smart Door Lock",
+    "productImageURL": "https://example.com/images/smart-door-lock.jpg",
+    "description": "Secure smart door lock with keyless entry and mobile app control.",
+    "price": 179.99,
+    "category": "Home Security",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-07-31T15:50:00",
+    "brand": "SecureHome"
+  },
+  {
+    "productName": "Electric Kettle",
+    "productImageURL": "https://example.com/images/electric-kettle.jpg",
+    "description": "Quick-boil electric kettle with temperature control and auto shut-off.",
+    "price": 49.99,
+    "category": "Kitchen Appliances",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-07-30T13:30:00",
+    "brand": "BrewMaster"
+  },
+  {
+    "productName": "Smart Light Bulbs",
+    "productImageURL": "https://example.com/images/smart-light-bulbs.jpg",
+    "description": "Color-changing smart light bulbs with voice control and scheduling.",
+    "price": 59.99,
+    "category": "Home Automation",
+    "rating": "4.4",
+    "createdAtDateTime": "2024-07-29T11:00:00",
+    "brand": "BrightTech"
+  },
+  {
+    "productName": "Electric Blender",
+    "productImageURL": "https://example.com/images/electric-blender.jpg",
+    "description": "High-power blender with multiple speed settings and a large pitcher.",
+    "price": 99.99,
+    "category": "Kitchen Appliances",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-07-28T08:45:00",
+    "brand": "BlendMaster"
+  },
+  {
+    "productName": "Wireless Gaming Mouse",
+    "productImageURL": "https://example.com/images/wireless-gaming-mouse.jpg",
+    "description": "Ergonomic wireless gaming mouse with customizable RGB lighting.",
+    "price": 69.99,
+    "category": "Gaming",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-07-27T18:30:00",
+    "brand": "GamePro"
+  },
+  {
+    "productName": "Portable Projector",
+    "productImageURL": "https://example.com/images/portable-projector.jpg",
+    "description": "Compact portable projector with HD resolution and built-in speakers.",
+    "price": 299.99,
+    "category": "Electronics",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-07-26T12:15:00",
+    "brand": "VisionGo"
+  },
+  {
+    "productName": "Wireless Keyboard",
+    "productImageURL": "https://example.com/images/wireless-keyboard.jpg",
+    "description": "Slim wireless keyboard with a built-in rechargeable battery.",
+    "price": 49.99,
+    "category": "Computers",
+    "rating": "4.4",
+    "createdAtDateTime": "2024-07-25T14:00:00",
+    "brand": "TypeEasy"
+  },
+  {
+    "productName": "Smart Plug",
+    "productImageURL": "https://example.com/images/smart-plug.jpg",
+    "description": "Wi-Fi smart plug with energy monitoring and voice control.",
+    "price": 19.99,
+    "category": "Home Automation",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-07-24T09:45:00",
+    "brand": "PowerSmart"
+  },
+  {
+    "productName": "Streaming Media Player",
+    "productImageURL": "https://example.com/images/streaming-media-player.jpg",
+    "description": "4K streaming media player with voice search and thousands of apps.",
+    "price": 49.99,
+    "category": "Electronics",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-07-23T16:30:00",
+    "brand": "StreamMaster"
+  },
+  {
+    "productName": "Electric Grill",
+    "productImageURL": "https://example.com/images/electric-grill.jpg",
+    "description": "Portable electric grill with non-stick surface and adjustable temperature.",
+    "price": 89.99,
+    "category": "Kitchen Appliances",
+    "rating": "4.4",
+    "createdAtDateTime": "2024-07-22T11:15:00",
+    "brand": "GrillMaster"
+  },
+  {
+    "productName": "Noise-Isolating Earbuds",
+    "productImageURL": "https://example.com/images/noise-isolating-earbuds.jpg",
+    "description": "In-ear earbuds with noise isolation and a comfortable fit.",
+    "price": 29.99,
+    "category": "Electronics",
+    "rating": "4.3",
+    "createdAtDateTime": "2024-07-21T09:00:00",
+    "brand": "SoundSeal"
+  },
+  {
+    "productName": "Smart Water Bottle",
+    "productImageURL": "https://example.com/images/smart-water-bottle.jpg",
+    "description": "Hydration tracking smart water bottle with temperature display.",
+    "price": 49.99,
+    "category": "Health & Fitness",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-07-20T17:45:00",
+    "brand": "HydraSmart"
+  },
+  {
+    "productName": "Air Purifier",
+    "productImageURL": "https://example.com/images/air-purifier.jpg",
+    "description": "HEPA air purifier with a quiet motor and real-time air quality display.",
+    "price": 199.99,
+    "category": "Home Appliances",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-07-19T13:30:00",
+    "brand": "PureAir"
+  },
+  {
+    "productName": "Smart Coffee Maker",
+    "productImageURL": "https://example.com/images/smart-coffee-maker.jpg",
+    "description": "Wi-Fi-enabled coffee maker with voice control and scheduling.",
+    "price": 129.99,
+    "category": "Kitchen Appliances",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-07-18T10:15:00",
+    "brand": "BrewTech"
+  },
+  {
+    "productName": "Wireless Charging Pad",
+    "productImageURL": "https://example.com/images/wireless-charging-pad.jpg",
+    "description": "Sleek wireless charging pad with fast charging capability.",
+    "price": 39.99,
+    "category": "Accessories",
+    "rating": "4.4",
+    "createdAtDateTime": "2024-07-17T18:00:00",
+    "brand": "ChargeMaster"
+  },
+  {
+    "productName": "Electric Wine Opener",
+    "productImageURL": "https://example.com/images/electric-wine-opener.jpg",
+    "description": "Automatic electric wine opener with a rechargeable battery.",
+    "price": 39.99,
+    "category": "Kitchen Appliances",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-07-16T12:45:00",
+    "brand": "WineEase"
+  },
+  {
+    "productName": "Smart Baby Monitor",
+    "productImageURL": "https://example.com/images/smart-baby-monitor.jpg",
+    "description": "Wi-Fi baby monitor with HD video and two-way audio.",
+    "price": 149.99,
+    "category": "Baby Products",
+    "rating": "4.8",
+    "createdAtDateTime": "2024-07-15T16:30:00",
+    "brand": "BabyWatch"
+  },
+  {
+    "productName": "Portable Air Conditioner",
+    "productImageURL": "https://example.com/images/portable-air-conditioner.jpg",
+    "description": "Compact portable air conditioner with remote control and timer.",
+    "price": 299.99,
+    "category": "Home Appliances",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-07-14T14:15:00",
+    "brand": "CoolBreeze"
+  },
+  {
+    "productName": "Smart Alarm Clock",
+    "productImageURL": "https://example.com/images/smart-alarm-clock.jpg",
+    "description": "Smart alarm clock with sunrise simulation and voice control.",
+    "price": 69.99,
+    "category": "Home Automation",
+    "rating": "4.4",
+    "createdAtDateTime": "2024-07-13T10:00:00",
+    "brand": "WakeUpSmart"
+  },
+  {
+    "productName": "Smart Sprinkler Controller",
+    "productImageURL": "https://example.com/images/smart-sprinkler-controller.jpg",
+    "description": "Weather-based smart sprinkler controller with mobile app control.",
+    "price": 149.99,
+    "category": "Garden",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-07-12T18:45:00",
+    "brand": "GreenLawn"
+  },
+  {
+    "productName": "Digital Picture Frame",
+    "productImageURL": "https://example.com/images/digital-picture-frame.jpg",
+    "description": "Wi-Fi-enabled digital picture frame with a large display and slideshow features.",
+    "price": 129.99,
+    "category": "Home Decor",
+    "rating": "4.6",
+    "createdAtDateTime": "2024-07-11T15:30:00",
+    "brand": "FrameIt"
+  },
+  {
+    "productName": "Electric Shaver",
+    "productImageURL": "https://example.com/images/electric-shaver.jpg",
+    "description": "Rechargeable electric shaver with precision blades and wet/dry use.",
+    "price": 79.99,
+    "category": "Personal Care",
+    "rating": "4.5",
+    "createdAtDateTime": "2024-07-10T12:15:00",
+    "brand": "ShavePro"
+  },
+  {
+    "productName": "Outdoor Security Camera",
+    "productImageURL": "https://example.com/images/outdoor-security-camera.jpg",
+    "description": "Weatherproof outdoor security camera with night vision and motion detection.",
+    "price": 179.99,
+    "category": "Home Security",
+    "rating": "4.7",
+    "createdAtDateTime": "2024-07-09T09:00:00",
+    "brand": "SafeHome"
+  }
+]
