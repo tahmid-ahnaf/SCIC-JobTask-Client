@@ -18,7 +18,7 @@ const Home = () => {
   const [brandLabel, setBrandLabel] = useState("All");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
-
+  const [lowToHigh,setLowToHigh] = useState("Ascending");
   const onPageChange = (page) => setCurrentPage(page);
 
 
@@ -27,7 +27,7 @@ const Home = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `http://localhost:5000/filteredproducts?productName=${searchKeyword}&category=${category}&brand=${brand}&minPrice=${minPrice}&maxPrice=${maxPrice}&page=${currentPage}&size=${itemsPerPage}`
+          `http://localhost:5000/filteredproducts?productName=${searchKeyword}&category=${category}&brand=${brand}&minPrice=${minPrice}&maxPrice=${maxPrice}&lowToHigh=${lowToHigh}&page=${currentPage}&size=${itemsPerPage}`
         );
         const data = await response.json();
         
@@ -42,7 +42,7 @@ const Home = () => {
     }
 
     fetchData();
-  }, [currentPage,itemsPerPage,searchKeyword, category, brand, maxPrice, minPrice]);
+  }, [currentPage,itemsPerPage,searchKeyword, category, brand, maxPrice, minPrice,lowToHigh]);
 
   useEffect(()=>{
     async function fetchCategories () {
@@ -178,6 +178,18 @@ const Home = () => {
 
           
             
+          
+        </div>
+
+        <div className="flex gap-4 items-center justify-center">
+
+        <p className="text-3xl">Sort By</p>
+          
+            <Dropdown label={`Price ${lowToHigh}` } dismissOnClick={false}>
+            <Dropdown.Item onClick={()=>{setLowToHigh("Ascending")}}>Price Ascending</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{setLowToHigh("Descending")}}>Price Descending</Dropdown.Item>
+
+            </Dropdown>
           
         </div>
 
