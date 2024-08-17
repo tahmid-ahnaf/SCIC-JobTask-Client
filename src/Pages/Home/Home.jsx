@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import { FloatingLabel, Pagination } from "flowbite-react";
+import { FloatingLabel, Label, Pagination, TextInput } from "flowbite-react";
 import { useEffect, useState } from "react";
 import { Dropdown } from "flowbite-react";
 const Home = () => {
@@ -16,6 +16,8 @@ const Home = () => {
   const [brand, setBrand] = useState("");
   const [categoryLabel, setCategoryLabel] = useState("All");
   const [brandLabel, setBrandLabel] = useState("All");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
 
   const onPageChange = (page) => setCurrentPage(page);
 
@@ -25,7 +27,7 @@ const Home = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `http://localhost:5000/filteredproducts?productName=${searchKeyword}&category=${category}&brand=${brand}&page=${currentPage}&size=${itemsPerPage}`
+          `http://localhost:5000/filteredproducts?productName=${searchKeyword}&category=${category}&brand=${brand}&minPrice=${minPrice}&maxPrice=${maxPrice}&page=${currentPage}&size=${itemsPerPage}`
         );
         const data = await response.json();
         
@@ -40,7 +42,7 @@ const Home = () => {
     }
 
     fetchData();
-  }, [currentPage,itemsPerPage,searchKeyword, category, brand]);
+  }, [currentPage,itemsPerPage,searchKeyword, category, brand, maxPrice, minPrice]);
 
   useEffect(()=>{
     async function fetchCategories () {
@@ -101,6 +103,14 @@ const Home = () => {
     setSearchKeyword(e.target.value);
   }
 
+  const handleMinPrice = e => {
+    setMinPrice(e.target.value);
+  }
+
+  const handleMaxPrice = e => {
+    setMaxPrice(e.target.value);
+  }
+
   return (
     <div className="max-w-[85%] mx-auto">
       <Helmet>
@@ -121,6 +131,7 @@ const Home = () => {
         <p className="text-3xl">Choose Category :</p>
           
             <Dropdown label={categoryLabel} dismissOnClick={false}>
+            <Dropdown.Item onClick={()=>{setCategory("All");setCategoryLabel("All")}}>All</Dropdown.Item>
             {
             categories.map((category,idx)  => (
 
@@ -137,6 +148,7 @@ const Home = () => {
         <p className="text-3xl">Choose Brand :</p>
           
             <Dropdown label={brandLabel} dismissOnClick={false}>
+            <Dropdown.Item onClick={()=>{setBrand("All");setBrandLabel("All")}}>All</Dropdown.Item>
             {
             brands.map((brand,idx)  => (
 
@@ -147,6 +159,29 @@ const Home = () => {
             </Dropdown>
           
         </div>
+
+        <div className="flex gap-4 items-center justify-center">
+
+        <p className="text-3xl">Price Range :</p>
+
+        <div className="flex items-center gap-4">
+              <TextInput value={minPrice} onChange={handleMinPrice} type="number" min={0} max={100000} placeholder="Lowest Price" />
+
+              <p>-</p>
+
+              <TextInput value={maxPrice} onChange={handleMaxPrice} type="number" min={0} max={100000} placeholder="Highest Price" />
+
+        </div>
+
+
+
+
+          
+            
+          
+        </div>
+
+
       </div>
 
       <div className="grid grid-cols-3 gap-8">
