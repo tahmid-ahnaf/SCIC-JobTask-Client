@@ -14,6 +14,8 @@ const Home = () => {
   const [searchKeyword, setSearchKeyword] = useState("");
   const [category, setCategory] = useState("");
   const [brand, setBrand] = useState("");
+  const [categoryLabel, setCategoryLabel] = useState("All");
+  const [brandLabel, setBrandLabel] = useState("All");
 
   const onPageChange = (page) => setCurrentPage(page);
 
@@ -107,20 +109,38 @@ const Home = () => {
 
       <h2>Home Page {searchKeyword}</h2>
 
-      <div className="flex gap-8">
+      <div className="flex items-center justify-center gap-4">
         <div>
 
         <FloatingLabel value={searchKeyword} onChange={handleSearch} variant="outlined" label="Search By Name" />
 
         </div>
 
-        <div>
+        <div className="flex gap-4 items-center justify-center">
+
+        <p className="text-3xl">Choose Category :</p>
           
-            <Dropdown label="Choose Category" dismissOnClick={false}>
+            <Dropdown label={categoryLabel} dismissOnClick={false}>
             {
             categories.map((category,idx)  => (
 
-              <Dropdown.Item onClick={()=>setCategory(category)} key={idx}>{category}</Dropdown.Item>
+              <Dropdown.Item onClick={()=>{setCategory(category);setCategoryLabel(category)}} key={idx}>{category}</Dropdown.Item>
+              
+            ))
+            }
+            </Dropdown>
+          
+        </div>
+
+        <div className="flex gap-4 items-center justify-center">
+
+        <p className="text-3xl">Choose Brand :</p>
+          
+            <Dropdown label={brandLabel} dismissOnClick={false}>
+            {
+            brands.map((brand,idx)  => (
+
+              <Dropdown.Item onClick={()=>{setBrand(brand);setBrandLabel(brand)}} key={idx}>{brand}</Dropdown.Item>
               
             ))
             }
