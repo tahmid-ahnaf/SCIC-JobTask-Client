@@ -1,15 +1,15 @@
 import { Helmet } from "react-helmet-async";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import { useLoaderData } from "react-router-dom";
 import { Pagination } from "flowbite-react";
 import { useEffect, useState } from "react";
 import { Dropdown } from "flowbite-react";
 const Home = () => {
-  const { count } = useLoaderData();
+  // const { count } = useLoaderData();
   const [itemsPerPage, setItemsPerPage] = useState(10);
-  const numberOfPages = Math.ceil(count / itemsPerPage);
+  const [numberOfPages, setNumberOfPages] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [products, setProducts] = useState([]);
+  let productName = "Smart";
 
   const onPageChange = (page) => setCurrentPage(page);
 
@@ -17,10 +17,15 @@ const Home = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `http://localhost:5000/paginatedproducts?page=${currentPage}&size=${itemsPerPage}`
+          `http://localhost:5000/filteredproducts?productName=${productName}&page=${currentPage}&size=${itemsPerPage}`
         );
         const data = await response.json();
-        setProducts(data);
+        
+        setProducts(data.result);
+        const totalProducts = data.totalCount;
+        console.log(totalProducts);
+        const pages = Math.ceil(totalProducts / itemsPerPage);
+        setNumberOfPages(pages);
       } catch (error) {
         console.error("Could not fetch items", error);
       }
