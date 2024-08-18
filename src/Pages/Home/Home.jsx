@@ -117,9 +117,7 @@ const Home = () => {
         <title>Home</title>
       </Helmet>
 
-      <h2>Home Page {searchKeyword}</h2>
-
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-4 mb-16">
         <div>
 
         <FloatingLabel value={searchKeyword} onChange={handleSearch} variant="outlined" label="Search By Name" />
@@ -128,7 +126,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-3xl">Choose Category :</p>
+        <p className="text-xl lg:text-3xl">Choose Category :</p>
           
             <Dropdown label={categoryLabel} dismissOnClick={false}>
             <Dropdown.Item onClick={()=>{setCategory("All");setCategoryLabel("All")}}>All</Dropdown.Item>
@@ -145,7 +143,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-3xl">Choose Brand :</p>
+        <p className="text-xl lg:text-3xl">Choose Brand :</p>
           
             <Dropdown label={brandLabel} dismissOnClick={false}>
             <Dropdown.Item onClick={()=>{setBrand("All");setBrandLabel("All")}}>All</Dropdown.Item>
@@ -162,7 +160,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-3xl">Price Range :</p>
+        <p className="text-xl lg:text-3xl">Price Range :</p>
 
         <div className="flex items-center gap-4">
               <TextInput value={minPrice} onChange={handleMinPrice} type="number" min={0} max={100000} placeholder="Lowest Price" />
@@ -183,7 +181,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-3xl">Sort By</p>
+        <p className="text-xl lg:text-3xl">Sort By :</p>
           
             <Dropdown label={`${lowToHigh}` } dismissOnClick={false}>
             <Dropdown.Item onClick={()=>{setLowToHigh("Ascending")}}>Price Ascending</Dropdown.Item>
@@ -198,7 +196,7 @@ const Home = () => {
 
       </div>
 
-      <div className="grid grid-cols-3 border-4 justify-items-center gap-8 border-red-700">
+      <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-8">
 
       {
         products.map((product)=>(
