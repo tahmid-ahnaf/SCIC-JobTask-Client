@@ -27,7 +27,7 @@ const Home = () => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `http://localhost:5000/filteredproducts?productName=${searchKeyword}&category=${category}&brand=${brand}&minPrice=${minPrice}&maxPrice=${maxPrice}&lowToHigh=${lowToHigh}&page=${currentPage}&size=${itemsPerPage}`
+          `https://scic-job-task-server-lyart.vercel.app/filteredproducts?productName=${searchKeyword}&category=${category}&brand=${brand}&minPrice=${minPrice}&maxPrice=${maxPrice}&lowToHigh=${lowToHigh}&page=${currentPage}&size=${itemsPerPage}`
         );
         const data = await response.json();
         
@@ -49,7 +49,7 @@ const Home = () => {
       try{
 
         const response = await fetch(
-          `http://localhost:5000/categories`
+          `https://scic-job-task-server-lyart.vercel.app/categories`
         );
         const data = await response.json();
         
@@ -72,7 +72,7 @@ const Home = () => {
       try{
 
         const response = await fetch(
-          `http://localhost:5000/brands`
+          `https://scic-job-task-server-lyart.vercel.app/brands`
         );
         const data = await response.json();
         
@@ -189,7 +189,7 @@ const Home = () => {
             <Dropdown.Item onClick={()=>{setLowToHigh("Ascending")}}>Price Ascending</Dropdown.Item>
             <Dropdown.Item onClick={()=>{setLowToHigh("Descending")}}>Price Descending</Dropdown.Item>
             <Dropdown.Item onClick={()=>{setLowToHigh("Newest First")}}>Newest First</Dropdown.Item>
-            <Dropdown.Item onClick={()=>{setLowToHigh("Oldest First")}}>Newest First</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{setLowToHigh("Oldest First")}}>Oldest First</Dropdown.Item>
 
             </Dropdown>
           

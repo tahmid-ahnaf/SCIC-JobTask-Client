@@ -15,7 +15,7 @@ const NavigationBar = () => {
     <Navbar fluid rounded>
       <Navbar.Brand href="https://flowbite-react.com">
         <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">StaffSphere</span>
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Techworld</span>
       </Navbar.Brand>
       <div className="flex md:order-2">
         
@@ -32,8 +32,6 @@ const NavigationBar = () => {
             <span className="block text-sm">{user.displayName}</span>
             <span className="block truncate text-sm font-medium">{user.email}</span>
           </Dropdown.Header>
-          <Dropdown.Item><Navbar.Link href="/dashboard">Dashboard</Navbar.Link></Dropdown.Item>
-          <Dropdown.Item><Navbar.Link href="/contact-us">Contact Us</Navbar.Link></Dropdown.Item>
           <Dropdown.Divider />
           <Dropdown.Item onClick={handleLogOut}>Sign out</Dropdown.Item>
         </Dropdown>
@@ -51,8 +49,6 @@ const NavigationBar = () => {
         <Navbar.Link href="/" active>
           Home
         </Navbar.Link>
-        <Navbar.Link href="/dashboard">Dashboard</Navbar.Link>
-        <Navbar.Link href="/contact-us">Contact Us</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
