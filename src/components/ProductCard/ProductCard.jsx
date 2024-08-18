@@ -3,7 +3,7 @@ import { Card } from "flowbite-react";
 const ProductCard = ({item}) => {
 
     const {
-        productName, description, category, rating, brand, price
+        productName, description, category, rating, brand, price, createdAtDateTime
 
     } = item;
 
@@ -72,6 +72,8 @@ const ProductCard = ({item}) => {
           {category}
         </a>
       </div>
+
+      <p>Date added : {createdAtDateTime}</p>
     </Card>
     );
 };

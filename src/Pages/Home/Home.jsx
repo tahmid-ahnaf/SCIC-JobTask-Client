@@ -18,7 +18,7 @@ const Home = () => {
   const [brandLabel, setBrandLabel] = useState("All");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
-  const [lowToHigh,setLowToHigh] = useState("Ascending");
+  const [lowToHigh,setLowToHigh] = useState("Newest First");
   const onPageChange = (page) => setCurrentPage(page);
 
 
@@ -185,9 +185,11 @@ const Home = () => {
 
         <p className="text-3xl">Sort By</p>
           
-            <Dropdown label={`Price ${lowToHigh}` } dismissOnClick={false}>
+            <Dropdown label={`${lowToHigh}` } dismissOnClick={false}>
             <Dropdown.Item onClick={()=>{setLowToHigh("Ascending")}}>Price Ascending</Dropdown.Item>
             <Dropdown.Item onClick={()=>{setLowToHigh("Descending")}}>Price Descending</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{setLowToHigh("Newest First")}}>Newest First</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{setLowToHigh("Oldest First")}}>Newest First</Dropdown.Item>
 
             </Dropdown>
           
@@ -196,7 +198,7 @@ const Home = () => {
 
       </div>
 
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 border-4 justify-items-center gap-8 border-red-700">
 
       {
         products.map((product)=>(
