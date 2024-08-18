@@ -2,7 +2,6 @@ import { Button, Card, Label, TextInput, FileInput} from "flowbite-react";
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useNavigate } from "react-router-dom";
-import { Dropdown } from "flowbite-react";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -12,8 +11,6 @@ const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_ke
 const SignUp = () => {
 
     const [error, setError] = useState("");
-    const [role, setRole] = useState("");
-    const [designation, setDesignation] = useState("");
     const [file, setFile] = useState(null);
     const axiosPublic = useAxiosPublic();
     const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -31,8 +28,6 @@ const SignUp = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const photo = file;
-    const bankAccountNo = e.target.bankAccountNo.value;
-    const salary = e.target.salary.value;
     const password = e.target.password.value;
     const confirmPassword = e.target.confirmPassword.value;
     if (password.length < 6) {
@@ -66,7 +61,6 @@ const SignUp = () => {
 
     const photoURL= res.data.data.display_url;
 
-    console.log(name,email,bankAccountNo,salary,designation,photoURL);
 
     createUser(email, password)
             .then(result => {
@@ -100,7 +94,7 @@ const SignUp = () => {
           <div className="mb-2 block">
             <Label htmlFor="email" value="Your email" />
           </div>
-          <TextInput id="email" type="email" placeholder="name@staffsphere.com" required />
+          <TextInput id="email" type="email" placeholder="name@techworld.com" required />
         </div>
         
 

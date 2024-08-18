@@ -3,6 +3,7 @@ import Root from "../layout/Root";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
     children: [
         {
             path:"/",
-            element:<Home></Home>,
+            element: <PrivateRoutes><Home></Home></PrivateRoutes>,
             loader: () => fetch('https://scic-job-task-server-lyart.vercel.app/productCount')
         },
         {

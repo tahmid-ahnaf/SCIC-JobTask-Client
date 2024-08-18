@@ -126,7 +126,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-xl lg:text-3xl">Choose Category :</p>
+        <p className="text-xl lg:text-2xl">Choose Category :</p>
           
             <Dropdown label={categoryLabel} dismissOnClick={false}>
             <Dropdown.Item onClick={()=>{setCategory("All");setCategoryLabel("All")}}>All</Dropdown.Item>
@@ -143,7 +143,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-xl lg:text-3xl">Choose Brand :</p>
+        <p className="text-xl lg:text-2xl">Choose Brand :</p>
           
             <Dropdown label={brandLabel} dismissOnClick={false}>
             <Dropdown.Item onClick={()=>{setBrand("All");setBrandLabel("All")}}>All</Dropdown.Item>
@@ -160,7 +160,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-xl lg:text-3xl">Price Range :</p>
+        <p className="text-xl lg:text-2xl">Price Range :</p>
 
         <div className="flex items-center gap-4">
               <TextInput value={minPrice} onChange={handleMinPrice} type="number" min={0} max={100000} placeholder="Lowest Price" />
@@ -181,7 +181,7 @@ const Home = () => {
 
         <div className="flex gap-4 items-center justify-center">
 
-        <p className="text-xl lg:text-3xl">Sort By :</p>
+        <p className="text-xl lg:text-2xl">Sort By :</p>
           
             <Dropdown label={`${lowToHigh}` } dismissOnClick={false}>
             <Dropdown.Item onClick={()=>{setLowToHigh("Ascending")}}>Price Ascending</Dropdown.Item>
@@ -213,7 +213,7 @@ const Home = () => {
       
       
 
-      <div className="flex overflow-x-auto sm:justify-center">
+      <div className="flex flex-col md:flex-row gap-8 overflow-x-auto justify-center items-center mt-8 mb-8">
         <Pagination
           currentPage={currentPage}
           totalPages={numberOfPages}
